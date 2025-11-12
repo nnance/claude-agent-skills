@@ -24,17 +24,19 @@ Use this skill when the user requests:
 To generate a new CLI project:
 
 1. Specify the project name and desired CLI command name.
-2. The skill will create a new directory with the project structure.
-3. Run `npm init -y` to initialize a new npm project.
-4. Run `npm i -D typescript @types/node @biomejs/biome` to install dev dependencies.
-5. Run `npm i @clack/prompts` to install runtime dependencies.
-6. Run `npx tsc --init` to create a `tsconfig.json` file.
-7. Run `npx biome init` to create a `biome.json` file.
-8. Set up the `package.json`, `tsconfig.json`, and `biome.json` files with the appropriate configurations.
-9. Create the necessary source files in `src/` including `index.ts` with a basic CLI structure using the `@clack/prompts` library.
-10. Create example test files in `src/` to demonstrate testing with Node's built-in test runner.
-11. Add npm scripts for building, developing, testing, linting, and formatting.
-12. Inform the user about the available npm scripts
+2. The skill will create a new directory unless specified otherwise.
+3. Inside the directory, the skill will perform the following steps:
+4. Initialize a new Git repository.
+5. Run `npm init -y` to initialize a new npm project.
+6. Run `npm i -D typescript @types/node @biomejs/biome` to install dev dependencies.
+7. Run `npm i @clack/prompts` to install runtime dependencies.
+8. Run `npx tsc --init` to create a `tsconfig.json` file.
+9. Run `npx biome init` to create a `biome.json` file.
+10. Set up the `package.json`, `tsconfig.json`, and `biome.json` files with the appropriate configurations.
+11. Create the necessary source files in `src/` including `index.ts` with a basic CLI structure using the `@clack/prompts` library.
+12. Create example test files in `src/` to demonstrate testing with Node's built-in test runner.
+13. Add npm scripts for building, developing, testing, linting, and formatting.
+14. Inform the user about the available npm scripts
 
 ### Technology Stack
 
@@ -73,8 +75,7 @@ Each generated project includes these scripts:
 
 **biome.json**
 - Enables linting with recommended rules
-- Formatter uses 2-space indentation, single quotes, 100 character line width
-- Import organization enabled
+- Configured to format code on save
 
 ### CLI Entry Point Structure
 
