@@ -1,0 +1,20 @@
+{
+	"name": "nnance-claude-agent-skills",
+	"owner": {
+		"name": "Nick Nance",
+		"email": "nnance@gmail.com"
+	},
+	"metadata": {
+		"description": "Personalized Claude Agent skills",
+		"version": "1.0.0"
+	},
+	"plugins": [
+		{
+			"name": "typescript-skills",
+			"description": "Collection of TypeScript coding skills for generating, explaining, refactoring, and testing TypeScript code",
+			"source": "./",
+			"strict": false,
+			"skills": ["./typescript-skills/node-ts-cli"]
+		}
+	]
+}
