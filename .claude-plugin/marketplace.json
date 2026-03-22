@@ -10,11 +10,18 @@
 	},
 	"plugins": [
 		{
-			"name": "typescript-skills",
-			"description": "Collection of TypeScript coding skills for generating, explaining, refactoring, and testing TypeScript code",
+			"name": "toolchain",
+			"description": "Dev tools, project scaffolding, and build configuration skills",
 			"source": "./",
 			"strict": false,
-			"skills": ["./typescript-skills/node-ts-cli"]
+			"skills": ["./toolchain/node-ts-cli"]
+		},
+		{
+			"name": "integrations",
+			"description": "Skills for accessing third-party services and APIs",
+			"source": "./",
+			"strict": false,
+			"skills": ["./integrations/fathom"]
 		}
 	]
 }

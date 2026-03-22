@@ -1,0 +1,31 @@
+{
+	"name": "fathom-cli",
+	"version": "0.0.1",
+	"description": "CLI tool for accessing Fathom meeting recordings, summaries, and transcripts",
+	"main": "src/index.ts",
+	"type": "module",
+	"bin": {
+		"fathom": "src/index.ts"
+	},
+	"engines": {
+		"node": ">=22.6.0"
+	},
+	"scripts": {
+		"start": "node src/index.ts"
+	},
+	"keywords": [
+		"fathom",
+		"meeting",
+		"transcription",
+		"cli"
+	],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"@types/node": "^24.9.2",
+		"typescript": "^5.9.3"
+	},
+	"dependencies": {
+		"zod": "^3.25.76"
+	}
+}
